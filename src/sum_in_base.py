@@ -32,9 +32,9 @@ def add_in_base(a: str, b: str, base: int) -> str:
 
         # Проверка на верность цифры
         if (da >= base):
-            raise ValueError(f"В числе {a} найдена недопустимая цифра со значением {da}")
+            raise ValueError(f"В числе {a} (основание: {base}) найдена недопустимая цифра со значением {da}")
         if (db >= base):
-            raise ValueError(f"В числе {b} найдена недопустимая цифра со значением {db}")
+            raise ValueError(f"В числе {b} (основание: {base}) найдена недопустимая цифра со значением {db}")
 
         s = da + db + carry
         out.append(DIGITS[s % base])
