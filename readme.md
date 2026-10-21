@@ -131,21 +131,21 @@ sum-in-base/
 ### 1. Создание приватного репозитория
 
 ```bash
-# Вариант А (рекомендуемый): через веб-интерфейс GitHub
+# Вариант 1: через веб-интерфейс GitHub
 #   1. Откройте страницу репозитория-шаблона.
 #   2. Нажмите "Use this template" → "Create a new repository".
-#   3. В поле "Repository name" укажите, например, sum-in-base.
+#   3. В поле "Repository name" укажите, например, ITLAB1.
 #   4. В разделе "Visibility" выберите "Private".
 #   5. Нажмите "Create repository".
 
-# Вариант Б: форк с последующим переводом в приватный
+# Вариант 2: Fork с последующим переводом в приватный
 #   1. Нажмите "Fork" в правом верхнем углу.
 #   2. В настройках форка (Settings → General → Danger Zone)
 #      переведите видимость в Private.
 
 # Клонирование своего приватного репозитория
-git clone https://github.com/<ваш-логин>/sum-in-base.git
-cd sum-in-base
+git clone https://github.com/<ваш-логин>/ITLAB1.git
+cd ITLAB1
 ```
 
 > 🔒 Проверьте, что на странице репозитория отображается метка **Private**
@@ -236,11 +236,11 @@ git push -u origin feature/add-in-base
 
 1. На GitHub появится кнопка **"Compare & pull request"** — нажмите её.
 2. **Убедитесь, что PR создаётся внутри ВАШЕГО репозитория:**
-   - **base repository** = `<ваш-логин>/sum-in-base`
+   - **base repository** = `<ваш-логин>/ITLAB1`
    - **base branch** = `main`
    - **compare branch** = `feature/add-in-base`
 3. ❗ **Не создавайте PR в репозиторий преподавателя / исходный шаблон.**
-   Если GitHub предлагает `base repository: <преподаватель>/sum-in-base` —
+   Если GitHub предлагает `base repository: <преподаватель>/ITLAB1` —
    это ошибка, измените base на свой репозиторий.
 4. Заполните описание PR:
    - что сделано;
@@ -297,8 +297,8 @@ git push -u origin feature/add-in-base
      приватный репозиторий.
 2. **Ссылку на открытый Pull Request** в `main` **вашего** репозитория.
    - Ссылка должна иметь вид:
-     `https://github.com/<ваш-логин>/sum-in-base/pull/<номер>`.
-   - Ссылка вида `https://github.com/<преподаватель>/sum-in-base/pull/<номер>`
+     `https://github.com/<ваш-логин>/ITLAB1/pull/<номер>`.
+   - Ссылка вида `https://github.com/<преподаватель>/ITLAB1/pull/<номер>`
      не принимается (штраф).
 3. Скриншот зелёного CI (по желанию, но помогает быстрее получить оценку).
 
