@@ -53,7 +53,7 @@
    - Альтернатива: форк, после чего **сразу переведите репозиторий в Private**
      (Settings → General → Danger Zone → Change visibility → Make private).
 2. **Клонировать** свой приватный репозиторий локально.
-3. Создать ветку `feature/<FIO>-add-in-base.   
+3. Создать ветку `feature/FIO-add-in-base.   
    3.1 Заполнить ФИО и группу в readme.md
 4. **Реализовать функцию** `add_in_base` в файле `src/sum_in_base.py`.
 5. Убедиться, что тесты проходят **локально**: `pytest -v`.
